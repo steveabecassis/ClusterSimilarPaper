@@ -88,7 +88,7 @@ if __name__ == '__main__':
     topic_sizes.head(10)
 
     # Top 10 words of cluster 1
-    pd.DataFrame(top_n_words[1][:10])
+    pd.DataFrame(top_n_words[1][:10]).plot.bar(x=0,y=1,rot=90)
 
 
     # Visualisation
