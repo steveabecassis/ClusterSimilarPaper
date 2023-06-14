@@ -89,12 +89,14 @@ if __name__ == '__main__':
 
     # Top 10 words of cluster 1
     pd.DataFrame(top_n_words[1][:10]).plot.bar(x=0,y=1,rot=90)
-
+    import pickle
+    with open('/Users/steveabecassis/PycharmProjects/ClusterSimilarPaper/top_n_words.pkl', 'wb') as handle:
+        pickle.dump(top_n_words, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
     # Visualisation
-
-
-
+    '''
+    In the notebook
+    '''
 
 
 
